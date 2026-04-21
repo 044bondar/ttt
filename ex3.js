@@ -1,4 +1,3 @@
-// Перетворення оцінки у словесний формат
 function getGradeText(grade) {
     if (grade >= 90) return "Відмінно";
     if (grade >= 75) return "Добре";
@@ -6,7 +5,6 @@ function getGradeText(grade) {
     return "Незадовільно";
 }
 
-// Визначення сезону (Вкладений if)
 function getSeasonIf(month) {
     if (month === 12 || month === 1 || month === 2) return "Зима";
     if (month >= 3 && month <= 5) return "Весна";
@@ -15,7 +13,6 @@ function getSeasonIf(month) {
     return "Некоректний місяць";
 }
 
-// Визначення сезону (Тернарний оператор ?)
 function getSeasonTernary(month) {
     return (month === 12 || month === 1 || month === 2) ? "Зима" :
         (month >= 3 && month <= 5) ? "Весна" :
